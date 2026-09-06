@@ -1,0 +1,22 @@
+Condition: Lung Mass
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+A lung mass is a relatively large abnormal area or lesion seen within the lung on medical imaging. A mass is an imaging finding and does not by itself establish a specific diagnosis.
+
+Common Features:
+A chest X-ray may show a localized abnormal opacity or rounded lesion. Further imaging is often needed to characterize its size, shape, location, and other features.
+
+Common Causes and Risk Factors:
+Possible causes include benign growths, infections, inflammatory conditions, and malignant tumors. Risk factors depend on the underlying cause.
+
+General Management:
+An identified lung mass generally requires clinical evaluation and appropriate follow-up imaging or testing. Management depends on the final diagnosis and may include observation, additional imaging, biopsy, or treatment of an identified condition.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
