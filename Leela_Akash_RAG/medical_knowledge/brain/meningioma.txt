@@ -1,0 +1,22 @@
+Condition: Meningioma
+
+Dataset: Brain Tumor MRI
+Category: Brain tumor
+
+General Information:
+A meningioma is a tumor that develops from the meninges, the protective membranes surrounding the brain and spinal cord. Many meningiomas grow slowly and are benign, although some can behave more aggressively.
+
+Common Features:
+Symptoms depend on location and size. Possible symptoms include headaches, seizures, vision changes, weakness, or problems with balance and coordination.
+
+Common Causes and Risk Factors:
+The exact cause is often unknown. Risk factors can include certain genetic conditions and previous exposure to radiation. Meningiomas are more common in adults.
+
+General Management:
+Management depends on tumor size, location, growth, symptoms, and biological characteristics. Options may include observation with imaging, surgery, or radiation therapy.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
