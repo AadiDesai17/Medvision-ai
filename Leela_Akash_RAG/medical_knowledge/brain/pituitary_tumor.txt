@@ -1,0 +1,22 @@
+Condition: Pituitary Tumor
+
+Dataset: Brain Tumor MRI
+Category: Brain tumor
+
+General Information:
+A pituitary tumor is an abnormal growth arising in or around the pituitary gland. Many pituitary tumors are benign and may affect hormone production or nearby structures.
+
+Common Features:
+Symptoms depend on hormone production and tumor size. Possible symptoms include headaches, vision problems, fatigue, and hormonal changes.
+
+Common Causes and Risk Factors:
+The exact cause of most pituitary tumors is not known. Some rare inherited conditions can increase the risk of developing pituitary tumors.
+
+General Management:
+Management depends on the tumor type, hormone activity, size, symptoms, and growth. Options may include observation, medicines, surgery, or radiation therapy.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
