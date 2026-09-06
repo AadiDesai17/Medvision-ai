@@ -1,0 +1,22 @@
+Condition: Moderate Diabetic Retinopathy
+
+Dataset: EyePACS
+Category: Diabetic retinopathy grade
+
+General Information:
+Moderate diabetic retinopathy represents progression beyond the mild stage. More retinal blood vessel abnormalities can develop as diabetes affects the small blood vessels supplying the retina.
+
+Common Features:
+Retinal photographs may show multiple microaneurysms, retinal hemorrhages, and other vascular changes. The exact findings vary between patients.
+
+Common Causes and Risk Factors:
+The condition is associated with diabetes and is influenced by factors such as duration of diabetes, blood glucose control, blood pressure, and other vascular risk factors.
+
+General Management:
+Management includes appropriate control of diabetes and cardiovascular risk factors together with regular eye examinations. Further ophthalmic evaluation may be needed depending on retinal findings.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
