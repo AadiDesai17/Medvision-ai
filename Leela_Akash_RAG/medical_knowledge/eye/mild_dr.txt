@@ -1,0 +1,22 @@
+Condition: Mild Diabetic Retinopathy
+
+Dataset: EyePACS
+Category: Diabetic retinopathy grade
+
+General Information:
+Mild diabetic retinopathy corresponds to an early stage of diabetic retinal disease. It is commonly associated with the presence of small retinal blood vessel abnormalities called microaneurysms.
+
+Common Features:
+Small microaneurysms may be visible in retinal photographs. At this stage, significant vision loss may not be present, although progression is possible.
+
+Common Causes and Risk Factors:
+Diabetic retinopathy is associated with diabetes. Longer duration of diabetes and factors such as poor blood glucose control, high blood pressure, and abnormal blood lipid levels can increase risk.
+
+General Management:
+Management generally focuses on controlling diabetes and other risk factors and maintaining recommended retinal screening and follow-up.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
