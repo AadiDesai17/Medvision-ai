@@ -1,0 +1,22 @@
+Condition: Pneumonia
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Pneumonia is an infection that causes inflammation in the air sacs of one or both lungs. The air sacs may fill with fluid or inflammatory material, which can affect breathing.
+
+Common Features:
+Chest X-ray may show areas of increased opacity or consolidation in the lungs. Symptoms can include cough, fever, chills, chest pain, and difficulty breathing.
+
+Common Causes and Risk Factors:
+Pneumonia can be caused by bacteria, viruses, fungi, or other infectious organisms. Risk varies with age, underlying health conditions, immune status, and exposure to infectious agents.
+
+General Management:
+Management depends on the cause and severity. Bacterial pneumonia may require antibiotics, while supportive care may be used for other causes. Severe cases may require hospital treatment.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
