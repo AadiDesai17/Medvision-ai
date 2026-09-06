@@ -1,0 +1,22 @@
+Condition: No Tumor
+
+Dataset: Brain Tumor MRI
+Category: Brain MRI classification
+
+General Information:
+No tumor indicates that the brain MRI image does not show a tumor according to the classification category. A normal-appearing image does not by itself exclude every possible neurological condition.
+
+Common Features:
+The classification category represents the absence of a detectable brain tumor in the dataset image. MRI interpretation in clinical practice considers brain structures, abnormalities, symptoms, and other relevant findings.
+
+Common Causes and Risk Factors:
+No tumor is not a disease or medical condition. The absence of a tumor in an image does not determine the overall health of a patient.
+
+General Management:
+No tumor-specific treatment is indicated when no tumor is identified. If a patient has neurological symptoms, clinical assessment and appropriate investigations should be guided by a healthcare professional.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or rule out a medical condition.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
