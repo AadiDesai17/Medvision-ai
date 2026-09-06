@@ -1,0 +1,22 @@
+Condition: Pleural Thickening
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Pleural thickening is an abnormal thickening of the pleura, the thin tissue layers surrounding the lungs. It can result from previous inflammation, infection, injury, or other conditions affecting the pleural tissue.
+
+Common Features:
+Chest X-ray may show localized or diffuse increased thickness along the pleural surface. The appearance can vary depending on the cause and extent.
+
+Common Causes and Risk Factors:
+Possible causes include previous pleural infection, inflammation, trauma, exposure-related disease, or other conditions affecting the pleura.
+
+General Management:
+Management depends on the underlying cause and clinical significance. Further imaging or clinical evaluation may be required when the finding is unexplained or associated with symptoms.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
