@@ -1,0 +1,22 @@
+Condition: Hernia
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+A hernia occurs when an organ or tissue pushes through a weak area in the surrounding muscle or connective tissue. In chest imaging, a diaphragmatic hernia may allow abdominal contents to move into the chest.
+
+Common Features:
+Imaging may show an abnormal position of abdominal structures within the chest or an unusual contour of the diaphragm. Symptoms depend on the type and size of the hernia.
+
+Common Causes and Risk Factors:
+Hernias may be congenital or develop later in life. Risk factors vary and may include increased abdominal pressure, previous surgery, injury, or weakness of supporting tissues.
+
+General Management:
+Management depends on the type, size, symptoms, and risk of complications. Clinical evaluation and additional imaging may be required. Some hernias may require surgical repair.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
