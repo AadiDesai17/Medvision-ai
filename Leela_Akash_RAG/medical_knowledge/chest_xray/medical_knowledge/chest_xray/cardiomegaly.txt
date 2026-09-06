@@ -1,0 +1,22 @@
+Condition: Cardiomegaly
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Cardiomegaly means an enlarged heart. It is a finding that may be seen on chest imaging and can be associated with several underlying heart or systemic conditions.
+
+Common Features:
+On a chest X-ray, an enlarged cardiac silhouette may suggest cardiomegaly. Clinical symptoms depend on the underlying cause and may include shortness of breath, fatigue, swelling of the legs, or reduced exercise tolerance.
+
+Common Causes and Risk Factors:
+Possible causes include high blood pressure, heart valve disease, cardiomyopathy, coronary artery disease, and other conditions that place increased workload on the heart.
+
+General Management:
+Management depends on the underlying cause. Evaluation may include clinical assessment, electrocardiography, echocardiography, blood tests, or additional imaging. Treatment is directed at the underlying condition.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
