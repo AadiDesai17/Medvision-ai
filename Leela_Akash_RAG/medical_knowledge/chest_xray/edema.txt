@@ -1,0 +1,22 @@
+Condition: Pulmonary Edema
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Pulmonary edema occurs when excess fluid accumulates in the lung tissue and air spaces. It can interfere with normal oxygen exchange and breathing.
+
+Common Features:
+Chest X-ray may show bilateral or diffuse increased lung opacity, vascular congestion, and other features depending on the severity and cause. Symptoms may include shortness of breath and difficulty breathing.
+
+Common Causes and Risk Factors:
+A common cause is heart failure. Other causes can include kidney problems, severe illness, certain medications, or conditions that injure the lungs.
+
+General Management:
+Management depends on the underlying cause and severity. Treatment may include oxygen or other supportive care and treatment of the condition causing the edema.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
