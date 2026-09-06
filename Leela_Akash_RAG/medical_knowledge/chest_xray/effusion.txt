@@ -1,0 +1,22 @@
+Condition: Pleural Effusion
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Pleural effusion is an abnormal accumulation of fluid in the pleural space around the lungs. It can occur due to several underlying conditions and may affect breathing.
+
+Common Features:
+On a chest X-ray, pleural effusion may appear as increased opacity at the lower part of the chest with blunting of the costophrenic angle. Larger effusions may cause shortness of breath, cough, or chest discomfort.
+
+Common Causes and Risk Factors:
+Common causes include heart failure, infection, inflammation, kidney or liver disease, and certain cancers.
+
+General Management:
+Management depends on the cause and severity. Treatment may involve treating the underlying condition and, when necessary, removing pleural fluid for diagnosis or symptom relief.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
