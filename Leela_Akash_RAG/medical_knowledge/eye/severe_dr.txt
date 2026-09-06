@@ -1,0 +1,22 @@
+Condition: Severe Diabetic Retinopathy
+
+Dataset: EyePACS
+Category: Diabetic retinopathy grade
+
+General Information:
+Severe diabetic retinopathy is an advanced stage of non-proliferative diabetic retinopathy. At this stage, extensive retinal blood vessel abnormalities can occur and the risk of progression to proliferative disease is increased.
+
+Common Features:
+Retinal photographs may show extensive hemorrhages, microaneurysms, and other vascular abnormalities. The exact appearance varies between patients.
+
+Common Causes and Risk Factors:
+The condition is associated with diabetes. Longer duration of diabetes and factors such as poor blood glucose control and high blood pressure can increase the risk of progression.
+
+General Management:
+Patients generally require closer ophthalmic monitoring and appropriate management of diabetes and other risk factors. Treatment decisions depend on retinal findings and clinical assessment.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
