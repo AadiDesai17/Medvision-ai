@@ -1,0 +1,22 @@
+Condition: Melanoma
+
+Dataset: HAM10000
+Category: Skin lesion
+
+General Information:
+Melanoma is a type of skin cancer that develops from melanocytes, the cells that produce skin pigment. It can be serious because it may spread to other parts of the body if not detected and treated early.
+
+Common Features:
+Melanoma may appear as a new or changing pigmented lesion. Changes in size, shape, color, or appearance can be warning signs. Some lesions may be irregular or have multiple colors.
+
+Common Causes and Risk Factors:
+Important risk factors include ultraviolet radiation exposure, fair skin, a history of sunburn, multiple or atypical moles, and a personal or family history of melanoma.
+
+General Management:
+Evaluation may involve clinical examination, dermoscopy, and biopsy. Treatment depends on the stage and may include surgical removal and additional therapies for advanced disease.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
