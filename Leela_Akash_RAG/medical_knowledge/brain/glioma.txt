@@ -1,0 +1,22 @@
+Condition: Glioma
+
+Dataset: Brain Tumor MRI
+Category: Brain tumor
+
+General Information:
+Glioma is a type of tumor that develops from glial cells or related cells in the brain or spinal cord. Gliomas vary widely in their biological behavior and grade.
+
+Common Features:
+Symptoms depend on the tumor's location and size. Possible symptoms include headaches, seizures, changes in vision, weakness, difficulty with speech, or changes in memory and behavior.
+
+Common Causes and Risk Factors:
+The exact cause of most gliomas is not known. Certain inherited conditions and previous exposure to ionizing radiation can increase risk in some people.
+
+General Management:
+Evaluation may involve neurological examination, MRI, and sometimes tissue sampling. Treatment depends on tumor type and grade and may include surgery, radiation therapy, chemotherapy, targeted treatment, or observation.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
