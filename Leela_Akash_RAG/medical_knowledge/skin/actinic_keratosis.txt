@@ -1,0 +1,22 @@
+Condition: Actinic Keratosis
+
+Dataset: HAM10000
+Category: Skin lesion
+
+General Information:
+Actinic keratosis is a rough, scaly skin lesion caused by long-term exposure to ultraviolet radiation. It commonly develops on sun-exposed areas of the skin.
+
+Common Features:
+Lesions may appear as rough or scaly patches and can vary in color. They are commonly found on the face, ears, scalp, forearms, and hands.
+
+Common Causes and Risk Factors:
+Long-term sun exposure is the main risk factor. Risk is also influenced by age, fair skin, and a history of significant ultraviolet exposure.
+
+General Management:
+Management may include monitoring, cryotherapy, topical treatments, or other procedures depending on the number and characteristics of lesions. Clinical evaluation is recommended because some lesions can progress to skin cancer.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
