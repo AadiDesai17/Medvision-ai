@@ -1,0 +1,22 @@
+Condition: Pneumothorax
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Pneumothorax occurs when air enters the pleural space between the lung and chest wall. This can cause partial or complete collapse of the affected lung.
+
+Common Features:
+A chest X-ray may show a visible pleural line with absent lung markings beyond it. Symptoms may include sudden chest pain and shortness of breath.
+
+Common Causes and Risk Factors:
+Pneumothorax may occur spontaneously or result from chest injury, medical procedures, or underlying lung disease. Risk factors depend on the type and cause.
+
+General Management:
+Management depends on the size and severity of the pneumothorax. Small cases may be observed, while larger or symptomatic cases may require removal of air from the pleural space.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
