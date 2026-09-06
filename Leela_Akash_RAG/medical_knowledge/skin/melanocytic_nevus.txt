@@ -1,0 +1,22 @@
+Condition: Melanocytic Nevus
+
+Dataset: HAM10000
+Category: Skin lesion
+
+General Information:
+A melanocytic nevus, commonly called a mole, is a usually benign growth of melanocytes. Nevi can vary in size, shape, and color and may occur anywhere on the skin.
+
+Common Features:
+A typical nevus may be a small, well-defined, evenly colored lesion with a relatively regular shape. Some nevi are present from birth, while others develop during childhood or adulthood.
+
+Common Causes and Risk Factors:
+Genetic factors and ultraviolet exposure can influence the development and number of nevi. People with many moles or atypical moles may have a higher risk of melanoma.
+
+General Management:
+Most typical nevi do not require treatment. A changing, unusual, or symptomatic lesion should be evaluated by a healthcare professional and may require dermoscopy or biopsy.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
