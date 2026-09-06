@@ -1,0 +1,22 @@
+Condition: Benign Keratosis-like Lesion
+
+Dataset: HAM10000
+Category: Skin lesion
+
+General Information:
+Benign keratosis-like lesions are non-cancerous skin growths that can have different appearances and may resemble other pigmented or scaly skin lesions.
+
+Common Features:
+They may appear as well-defined, raised, scaly, waxy, or pigmented lesions. Their color can range from light to dark and their appearance may vary between individuals.
+
+Common Causes and Risk Factors:
+Risk factors vary by lesion type. Some benign keratotic lesions become more common with increasing age and may occur on different areas of the body.
+
+General Management:
+Many benign lesions do not require treatment. If a lesion changes in appearance, becomes symptomatic, or is difficult to distinguish from a malignant lesion, clinical assessment may be recommended.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
