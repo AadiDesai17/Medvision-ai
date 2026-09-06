@@ -1,0 +1,22 @@
+Condition: Pulmonary Fibrosis
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Pulmonary fibrosis refers to scarring and thickening of lung tissue. The scarring can make the lungs less flexible and can interfere with normal oxygen exchange.
+
+Common Features:
+Chest imaging may show abnormal linear or reticular patterns and other changes depending on the type and extent of fibrosis. Symptoms may include progressive shortness of breath and dry cough.
+
+Common Causes and Risk Factors:
+Causes include certain autoimmune diseases, occupational or environmental exposures, medications, infections, and other conditions. In some patients, no specific cause is identified.
+
+General Management:
+Management depends on the type and cause. Evaluation may include lung function testing and additional imaging. Treatment can include managing the underlying cause, medicines, oxygen therapy, and pulmonary rehabilitation when appropriate.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
