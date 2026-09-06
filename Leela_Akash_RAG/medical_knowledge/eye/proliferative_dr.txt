@@ -1,0 +1,22 @@
+Condition: Proliferative Diabetic Retinopathy
+
+Dataset: EyePACS
+Category: Diabetic retinopathy grade
+
+General Information:
+Proliferative diabetic retinopathy is an advanced stage of diabetic eye disease in which abnormal new blood vessels can grow on or near the retina or optic nerve. These vessels are fragile and can cause serious complications.
+
+Common Features:
+Retinal photographs may show abnormal new blood vessel growth. Complications can include vitreous hemorrhage, scar formation, retinal detachment, and vision loss.
+
+Common Causes and Risk Factors:
+The condition develops as diabetic retinal damage progresses. Long duration of diabetes and inadequate control of blood glucose and blood pressure can increase the risk.
+
+General Management:
+Management requires specialist ophthalmic evaluation. Depending on the clinical situation, treatment may include laser photocoagulation, medicines injected into the eye, surgery, or other interventions.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
