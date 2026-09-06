@@ -1,0 +1,22 @@
+Condition: No Diabetic Retinopathy
+
+Dataset: EyePACS
+Category: Diabetic retinopathy grade
+
+General Information:
+No diabetic retinopathy means that the retinal image does not show characteristic signs of diabetic retinopathy according to the classification category.
+
+Common Features:
+The retina may appear without the characteristic abnormalities used to classify diabetic retinopathy. Clinical assessment may still consider other eye conditions and the patient's overall health.
+
+Common Causes and Risk Factors:
+No diabetic retinopathy is a classification result rather than a disease. People with diabetes can develop retinopathy over time, so regular eye examinations are important.
+
+General Management:
+For people with diabetes, recommended management includes appropriate diabetes control and regular eye examinations as advised by healthcare professionals.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or rule out eye disease.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
