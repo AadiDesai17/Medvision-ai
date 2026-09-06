@@ -1,0 +1,22 @@
+Condition: Dermatofibroma
+
+Dataset: HAM10000
+Category: Skin lesion
+
+General Information:
+Dermatofibroma is a common benign skin growth that usually develops in the deeper layers of the skin. It is generally harmless and often remains stable over time.
+
+Common Features:
+It commonly appears as a small, firm, raised lesion that may be brown, pink, or another skin color. Some lesions may show a characteristic dimpling when the surrounding skin is pinched.
+
+Common Causes and Risk Factors:
+The exact cause is not always known. Some dermatofibromas may develop after minor skin injury or insect bites.
+
+General Management:
+Most dermatofibromas do not require treatment. Removal may be considered if the lesion is painful, repeatedly irritated, or if its diagnosis is uncertain.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
