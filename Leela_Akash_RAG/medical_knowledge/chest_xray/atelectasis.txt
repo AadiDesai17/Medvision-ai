@@ -1,0 +1,22 @@
+Condition: Atelectasis
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Atelectasis is a partial or complete collapse of lung tissue, resulting in reduced air volume in part of the lung. It can occur when an airway is blocked or when external factors prevent normal expansion of the lung.
+
+Common Features:
+Possible findings include reduced lung volume, increased density or opacity in an affected region, and displacement of nearby structures. Clinical symptoms may include shortness of breath, cough, or chest discomfort, although small areas may cause few symptoms.
+
+Common Causes and Risk Factors:
+Causes may include airway obstruction, mucus plugging, shallow breathing after surgery, prolonged immobility, or pressure on lung tissue from surrounding conditions.
+
+General Management:
+Management depends on the underlying cause. Treatment may include addressing an airway obstruction, breathing exercises, mobilization, and treatment of the underlying condition. Significant or unexplained symptoms require medical evaluation.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
