@@ -1,0 +1,22 @@
+Condition: Basal Cell Carcinoma
+
+Dataset: HAM10000
+Category: Skin lesion
+
+General Information:
+Basal cell carcinoma is a common type of skin cancer arising from basal cells in the skin. It usually grows slowly and rarely spreads to distant parts of the body, but untreated lesions can damage nearby tissue.
+
+Common Features:
+It may appear as a pearly or shiny bump, a persistent sore, or a lesion that bleeds or does not heal. Appearance can vary depending on the subtype and location.
+
+Common Causes and Risk Factors:
+Long-term ultraviolet radiation exposure is an important risk factor. Other factors include fair skin, previous skin cancer, and certain medical or genetic conditions.
+
+General Management:
+Treatment depends on the lesion's type, size, location, and other factors. Options may include surgical removal, Mohs surgery, topical treatment, or other local therapies.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
