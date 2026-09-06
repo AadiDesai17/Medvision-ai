@@ -1,0 +1,22 @@
+Condition: Lung Consolidation
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Lung consolidation is an area of lung tissue where air in the air sacs has been replaced by fluid, inflammatory material, blood, or other substances. It is an imaging finding rather than a diagnosis by itself.
+
+Common Features:
+On a chest X-ray, consolidation may appear as an area of increased lung opacity. Air bronchograms and other associated findings may sometimes be present.
+
+Common Causes and Risk Factors:
+Common causes include pneumonia, pulmonary edema, bleeding into the lungs, and other inflammatory or infectious conditions.
+
+General Management:
+Treatment depends on the underlying cause. Clinical assessment and additional investigations may be needed to determine the cause and guide management.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
