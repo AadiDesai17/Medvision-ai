@@ -1,0 +1,22 @@
+Condition: Emphysema
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Emphysema is a chronic lung condition in which the walls of the air sacs are damaged, reducing the surface area available for normal gas exchange. It is a major form of chronic obstructive pulmonary disease.
+
+Common Features:
+Chest imaging may show increased lung volumes and other changes associated with chronic air trapping. Symptoms commonly include shortness of breath, cough, and reduced exercise tolerance.
+
+Common Causes and Risk Factors:
+Long-term cigarette smoking is a major risk factor. Other exposures and, less commonly, inherited conditions can also contribute.
+
+General Management:
+Management may include smoking cessation, appropriate inhaled medicines, pulmonary rehabilitation, vaccinations, and treatment of exacerbations. Severe disease may require additional interventions.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
