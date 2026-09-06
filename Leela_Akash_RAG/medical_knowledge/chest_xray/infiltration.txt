@@ -1,0 +1,22 @@
+Condition: Infiltration
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+Infiltration is a radiographic description used for an area of increased or abnormal lung opacity. It may reflect different underlying processes, including infection, inflammation, fluid, or other lung abnormalities.
+
+Common Features:
+Chest X-ray may show patchy or diffuse areas of increased lung opacity. The appearance and distribution can vary depending on the underlying cause.
+
+Common Causes and Risk Factors:
+Possible causes include respiratory infections, inflammatory conditions, pulmonary edema, and other processes affecting the lung tissue.
+
+General Management:
+Management depends on the underlying cause. Clinical assessment and additional tests or imaging may be needed to determine the cause and appropriate treatment.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
