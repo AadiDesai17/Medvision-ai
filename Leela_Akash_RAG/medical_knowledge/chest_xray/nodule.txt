@@ -1,0 +1,22 @@
+Condition: Pulmonary Nodule
+
+Dataset: ChestX-ray14
+Category: Chest X-ray finding
+
+General Information:
+A pulmonary nodule is a small, rounded or irregular area of increased density within the lung. Many pulmonary nodules are benign, but some may require further evaluation.
+
+Common Features:
+A nodule may appear as a small localized opacity on chest imaging. Its size, shape, location, and changes over time can help clinicians determine the appropriate evaluation.
+
+Common Causes and Risk Factors:
+Possible causes include previous infections, inflammatory conditions, benign growths, and lung cancer. Risk depends on factors such as age, smoking history, and other clinical features.
+
+General Management:
+Management depends on the nodule's characteristics and the patient's clinical risk. Follow-up imaging or additional diagnostic evaluation may be recommended.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
