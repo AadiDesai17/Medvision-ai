@@ -1,0 +1,22 @@
+Condition: Vascular Lesion
+
+Dataset: HAM10000
+Category: Skin lesion
+
+General Information:
+Vascular lesions are skin abnormalities involving blood vessels. They can be benign and may appear as red, purple, or bluish areas or growths on the skin.
+
+Common Features:
+Appearance varies depending on the type of vascular lesion. Lesions may be flat or raised and can range from small spots to larger areas of discoloration.
+
+Common Causes and Risk Factors:
+Causes vary by lesion type. Some vascular lesions are present from birth, while others develop later in life due to changes in blood vessels or other factors.
+
+General Management:
+Many benign vascular lesions require no treatment. Depending on the type, location, symptoms, and cosmetic concerns, treatment may include observation, laser therapy, or other procedures. Clinical evaluation may be needed when the diagnosis is uncertain.
+
+RAG Safety Note:
+This information is for general educational context in the MedVision prototype. It should not be used alone to diagnose or treat a patient.
+
+Source/Verification Note:
+Medical information should be verified against current authoritative clinical references before use in a clinical setting.
