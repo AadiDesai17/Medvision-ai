@@ -1,0 +1,82 @@
+# ==============================================================================
+# MedVision ResNet50 Standardized Experiment Configuration
+# Standardized Protocol aligned with ViT-B/16 and Swin-Tiny experiments
+# ==============================================================================
+
+project:
+  name: medvision_resnet50
+  stage: 3
+  description: "Standardized ResNet50 retraining for 3-class Chest X-ray classification"
+
+dataset:
+  dataset_root: "C:\\Users\\AADI\\Downloads\\dataset\\chest-xray-tb-pneumonia"
+  classes:
+    - NORMAL
+    - PNEUMONIA
+    - TUBERCULOSIS
+  num_classes: 3
+  img_size: 224
+  num_workers: 2
+  pin_memory: true
+  class_weights:
+    NORMAL: 0.8630
+    PNEUMONIA: 0.9902
+    TUBERCULOSIS: 1.1468
+
+model:
+  name: resnet50
+  torchvision_constructor: torchvision.models.resnet50
+  pretrained: true
+  weights: "torchvision.models.ResNet50_Weights.DEFAULT"
+  head_in_features: 2048
+  head_dropout: 0.2
+  num_classes: 3
+  gradcam_layer: "layer4"
+
+training:
+  seed: 42
+  batch_size: 16                # Physical batch size per GPU forward/backward step
+  gradient_accumulation_steps: 2 # 16 * 2 = 32 effective batch size
+  effective_batch_size: 32
+  max_epochs: 15
+  early_stopping_patience: 5
+  primary_metric: val_macro_f1
+  label_smoothing: 0.0          # Strictly NO label smoothing for standardized protocol
+  gradient_clipping: 1.0
+  amp: true                     # CUDA FP16 mixed precision
+  precision: fp16
+  grad_scaler_init_scale: 1024  # Safe initialization scale
+
+optimizer:
+  name: AdamW
+  lr: 0.00003                   # 3e-5
+  weight_decay: 0.01
+  betas: [0.9, 0.999]
+  eps: 0.00000001               # 1e-8
+
+scheduler:
+  name: CosineAnnealingLR
+  T_max: 15                     # 15 epochs
+  eta_min: 0.000001             # 1e-6
+
+augmentation:
+  train:
+    safe_rgb: true
+    resize: 224
+    random_rotation_degrees: 7
+    color_jitter:
+      brightness: 0.05
+      contrast: 0.05
+    random_horizontal_flip: false # Strictly disabled for standardized medical CXR protocol
+    random_vertical_flip: false   # Strictly disabled
+    random_resized_crop: false    # Strictly disabled
+  val_test_infer:
+    safe_rgb: true
+    resize: 224
+
+paths:
+  checkpoint_dir: "models/chest_xray_resnet50"
+  results_dir: "results/chest_xray_resnet50"
+  best_model_path: "models/chest_xray_resnet50/best_model.pth"
+  historical_model_path: "models/chest_xray_resnet50/historical_best_model.pth"
+  history_path: "results/chest_xray_resnet50/training_history.json"

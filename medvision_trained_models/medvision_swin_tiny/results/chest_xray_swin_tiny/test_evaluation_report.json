@@ -1,0 +1,65 @@
+{
+  "architecture": "Swin-Tiny (swin_t)",
+  "checkpoint": "models\\chest_xray_swin_tiny\\best_model.pth",
+  "checkpoint_epoch": 15,
+  "dataset": "C:\\Users\\AADI\\Downloads\\dataset\\chest-xray-tb-pneumonia",
+  "test_count": 1951,
+  "class_names": [
+    "NORMAL",
+    "PNEUMONIA",
+    "TUBERCULOSIS"
+  ],
+  "class_mapping": {
+    "NORMAL": 0,
+    "PNEUMONIA": 1,
+    "TUBERCULOSIS": 2
+  },
+  "accuracy": 0.9917990773962071,
+  "accuracy_pct": 99.18,
+  "macro_precision": 0.9928863102700616,
+  "macro_precision_pct": 99.29,
+  "macro_recall": 0.9923833473978204,
+  "macro_recall_pct": 99.24,
+  "macro_f1": 0.9926296965554693,
+  "macro_f1_pct": 99.26,
+  "weighted_f1": 0.9917959139517579,
+  "weighted_f1_pct": 99.18,
+  "per_class_metrics": {
+    "NORMAL": {
+      "precision": 0.9881376037959668,
+      "recall": 0.9928486293206198,
+      "f1": 0.990487514863258,
+      "support": 839
+    },
+    "PNEUMONIA": {
+      "precision": 0.990521327014218,
+      "recall": 0.9843014128728415,
+      "f1": 0.9874015748031496,
+      "support": 637
+    },
+    "TUBERCULOSIS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 475
+    }
+  },
+  "confusion_matrix": [
+    [
+      833,
+      6,
+      0
+    ],
+    [
+      10,
+      627,
+      0
+    ],
+    [
+      0,
+      0,
+      475
+    ]
+  ],
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}

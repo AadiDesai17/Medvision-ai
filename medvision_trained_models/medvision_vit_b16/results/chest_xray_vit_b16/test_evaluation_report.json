@@ -1,0 +1,36 @@
+{
+  "model": "ViT-B/16",
+  "checkpoint_epoch": 5,
+  "best_val_macro_f1": 0.9902352212580464,
+  "best_val_accuracy": 0.9892307692307692,
+  "best_val_loss": 0.0502323380337046,
+  "test_metrics": {
+    "accuracy": 0.9897488467452589,
+    "macro_precision": 0.9905592142669962,
+    "macro_recall": 0.9904896978986254,
+    "macro_f1": 0.9905217896398243,
+    "weighted_precision": 0.9897474310540272,
+    "weighted_recall": 0.9897488467452589,
+    "weighted_f1": 0.9897454736578197,
+    "per_class": {
+      "NORMAL": {
+        "precision": 0.9869203329369798,
+        "recall": 0.9892729439809297,
+        "f1": 0.9880952380952381,
+        "support": 839
+      },
+      "PNEUMONIA": {
+        "precision": 0.9889589905362776,
+        "recall": 0.9843014128728415,
+        "f1": 0.9866247049567269,
+        "support": 637
+      },
+      "TUBERCULOSIS": {
+        "precision": 0.9957983193277311,
+        "recall": 0.9978947368421053,
+        "f1": 0.9968454258675079,
+        "support": 475
+      }
+    }
+  }
+}

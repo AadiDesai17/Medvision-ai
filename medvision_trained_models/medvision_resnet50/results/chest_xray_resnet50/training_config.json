@@ -1,0 +1,88 @@
+{
+  "project": {
+    "name": "medvision_resnet50",
+    "stage": 3,
+    "description": "Standardized ResNet50 retraining for 3-class Chest X-ray classification"
+  },
+  "dataset": {
+    "dataset_root": "C:\\Users\\AADI\\Downloads\\dataset\\chest-xray-tb-pneumonia",
+    "classes": [
+      "NORMAL",
+      "PNEUMONIA",
+      "TUBERCULOSIS"
+    ],
+    "num_classes": 3,
+    "img_size": 224,
+    "num_workers": 2,
+    "pin_memory": true,
+    "class_weights": {
+      "NORMAL": 0.863,
+      "PNEUMONIA": 0.9902,
+      "TUBERCULOSIS": 1.1468
+    }
+  },
+  "model": {
+    "name": "resnet50",
+    "torchvision_constructor": "torchvision.models.resnet50",
+    "pretrained": true,
+    "weights": "torchvision.models.ResNet50_Weights.DEFAULT",
+    "head_in_features": 2048,
+    "head_dropout": 0.2,
+    "num_classes": 3,
+    "gradcam_layer": "layer4"
+  },
+  "training": {
+    "seed": 42,
+    "batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "effective_batch_size": 32,
+    "max_epochs": 15,
+    "early_stopping_patience": 5,
+    "primary_metric": "val_macro_f1",
+    "label_smoothing": 0.0,
+    "gradient_clipping": 1.0,
+    "amp": true,
+    "precision": "fp16",
+    "grad_scaler_init_scale": 1024
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 3e-05,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08
+  },
+  "scheduler": {
+    "name": "CosineAnnealingLR",
+    "T_max": 15,
+    "eta_min": 1e-06
+  },
+  "augmentation": {
+    "train": {
+      "safe_rgb": true,
+      "resize": 224,
+      "random_rotation_degrees": 7,
+      "color_jitter": {
+        "brightness": 0.05,
+        "contrast": 0.05
+      },
+      "random_horizontal_flip": false,
+      "random_vertical_flip": false,
+      "random_resized_crop": false
+    },
+    "val_test_infer": {
+      "safe_rgb": true,
+      "resize": 224
+    }
+  },
+  "paths": {
+    "checkpoint_dir": "models/chest_xray_resnet50",
+    "results_dir": "results/chest_xray_resnet50",
+    "best_model_path": "models/chest_xray_resnet50/best_model.pth",
+    "historical_model_path": "models/chest_xray_resnet50/historical_best_model.pth",
+    "history_path": "results/chest_xray_resnet50/training_history.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "model": "resnet50",
+  "torchvision_constructor": "torchvision.models.resnet50",
+  "pretrained_weights": "ResNet50_Weights.DEFAULT",
+  "total_parameters": 23514179,
+  "trainable_parameters": 23514179,
+  "total_epochs_trained": 15,
+  "best_epoch": 13,
+  "best_val_macro_f1": 0.9904,
+  "best_val_accuracy": 0.9897,
+  "best_val_loss": 0.057,
+  "early_stopping_triggered": false,
+  "early_stopping_patience": 5,
+  "total_duration_minutes": 28.3,
+  "peak_gpu_memory_mb": 1120.73,
+  "best_model_path": "models\\chest_xray_resnet50\\best_model.pth",
+  "training_history_path": "results\\chest_xray_resnet50\\training_history.json",
+  "held_out_test_evaluated": false
+}

@@ -1,0 +1,60 @@
+{
+  "dataset": "chest_xray_3class",
+  "model_architecture": "resnet50",
+  "test_samples": 1951,
+  "accuracy": 0.9887,
+  "macro_precision": 0.9898,
+  "macro_recall": 0.9898,
+  "macro_f1": 0.9898,
+  "weighted_precision": 0.9887,
+  "weighted_recall": 0.9887,
+  "weighted_f1": 0.9887,
+  "per_class_metrics": {
+    "NORMAL": {
+      "name": "Normal / Healthy",
+      "precision": 0.9881,
+      "recall": 0.9857,
+      "f1_score": 0.9869,
+      "support": 839
+    },
+    "PNEUMONIA": {
+      "name": "Pneumonia",
+      "precision": 0.9812,
+      "recall": 0.9859,
+      "f1_score": 0.9836,
+      "support": 637
+    },
+    "TUBERCULOSIS": {
+      "name": "Tuberculosis",
+      "precision": 1.0,
+      "recall": 0.9979,
+      "f1_score": 0.9989,
+      "support": 475
+    }
+  },
+  "confusion_matrix": [
+    [
+      827,
+      12,
+      0
+    ],
+    [
+      9,
+      628,
+      0
+    ],
+    [
+      1,
+      0,
+      474
+    ]
+  ],
+  "error_analysis": {
+    "pneumonia_misclassified_as_normal": 9,
+    "tuberculosis_misclassified_as_normal": 1,
+    "normal_misclassified_as_pneumonia": 12,
+    "normal_misclassified_as_tuberculosis": 0,
+    "pneumonia_misclassified_as_tuberculosis": 0,
+    "tuberculosis_misclassified_as_pneumonia": 0
+  }
+}

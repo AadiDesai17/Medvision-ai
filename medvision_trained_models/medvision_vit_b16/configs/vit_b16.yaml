@@ -1,0 +1,60 @@
+# MedVision Vision Transformer ViT-B/16 Configuration
+# Chest X-ray 3-Class Classification: NORMAL, PNEUMONIA, TUBERCULOSIS
+
+experiment_name: "chest_xray_vit_b16"
+
+dataset:
+  root_dir: "C:\\Users\\AADI\\Downloads\\dataset\\chest-xray-tb-pneumonia"
+  classes:
+    - "NORMAL"
+    - "PNEUMONIA"
+    - "TUBERCULOSIS"
+  num_classes: 3
+  image_size: [224, 224]
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+  num_workers: 2
+  pin_memory: true
+
+augmentation:
+  rotation_degrees: 7
+  brightness_jitter: 0.05
+  contrast_jitter: 0.05
+
+model:
+  architecture: "vit_b_16"
+  pretrained_weights: "IMAGENET1K_V1"
+  dropout: 0.0
+
+training:
+  seed: 42
+  batch_size: 16
+  gradient_accumulation_steps: 2
+  effective_batch_size: 32
+  max_epochs: 15
+  early_stopping_patience: 5
+  primary_metric: "val_macro_f1"
+  optimizer:
+    name: "AdamW"
+    learning_rate: 0.00003  # 3e-5
+    weight_decay: 0.01
+    betas: [0.9, 0.999]
+    eps: 0.00000001
+  scheduler:
+    name: "CosineAnnealingLR"
+    t_max: 15
+    eta_min: 0.000001  # 1e-6
+  amp:
+    enabled: true
+    init_scale: 1024.0  # Safe initial scale for Vision Transformer pre-logits dynamic range
+  gradient_clipping: 1.0
+  class_weighting: "sqrt_inverse"
+
+paths:
+  checkpoint_dir: "models/chest_xray_vit_b16"
+  best_model_path: "models/chest_xray_vit_b16/best_model.pth"
+  config_path: "models/chest_xray_vit_b16/config.json"
+  results_dir: "results/chest_xray_vit_b16"
+  evaluation_report_path: "results/chest_xray_vit_b16/test_evaluation_report.json"
+  confusion_matrix_path: "results/chest_xray_vit_b16/confusion_matrix.png"
+  training_curves_path: "results/chest_xray_vit_b16/training_curves.png"

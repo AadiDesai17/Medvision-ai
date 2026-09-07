@@ -1,0 +1,182 @@
+{
+  "model": {
+    "name": "convnext_tiny",
+    "torchvision_function": "torchvision.models.convnext_tiny",
+    "weights": "ConvNeXt_Tiny_Weights.DEFAULT",
+    "pretrained_source": "ImageNet-1K (v1)",
+    "num_classes": 3,
+    "in_channels": 3,
+    "input_size": [
+      224,
+      224
+    ],
+    "image_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "image_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "classifier_in_features": 768
+  },
+  "dataset": {
+    "root": "C:\\Users\\AADI\\Downloads\\dataset\\chest-xray-tb-pneumonia",
+    "classes": [
+      "NORMAL",
+      "PNEUMONIA",
+      "TUBERCULOSIS"
+    ],
+    "class_to_idx": {
+      "NORMAL": 0,
+      "PNEUMONIA": 1,
+      "TUBERCULOSIS": 2
+    },
+    "expected_counts": {
+      "train": {
+        "NORMAL": 3911,
+        "PNEUMONIA": 2971,
+        "TUBERCULOSIS": 2215,
+        "total": 9097
+      },
+      "val": {
+        "NORMAL": 838,
+        "PNEUMONIA": 637,
+        "TUBERCULOSIS": 475,
+        "total": 1950
+      },
+      "test": {
+        "NORMAL": 839,
+        "PNEUMONIA": 637,
+        "TUBERCULOSIS": 475,
+        "total": 1951
+      },
+      "grand_total": 12998
+    },
+    "class_weights": {
+      "NORMAL": 0.863,
+      "PNEUMONIA": 0.9902,
+      "TUBERCULOSIS": 1.1468
+    }
+  },
+  "transforms": {
+    "train": {
+      "convert_to_rgb": true,
+      "resize": [
+        224,
+        224
+      ],
+      "random_rotation_degrees": 7,
+      "color_jitter": {
+        "brightness": 0.05,
+        "contrast": 0.05
+      },
+      "to_tensor": true,
+      "normalize": {
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "prohibited_augmentations": [
+        "RandomHorizontalFlip",
+        "RandomVerticalFlip",
+        "RandomResizedCrop"
+      ]
+    },
+    "val": {
+      "convert_to_rgb": true,
+      "resize": [
+        224,
+        224
+      ],
+      "to_tensor": true,
+      "normalize": {
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      }
+    },
+    "test": {
+      "convert_to_rgb": true,
+      "resize": [
+        224,
+        224
+      ],
+      "to_tensor": true,
+      "normalize": {
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      }
+    }
+  },
+  "training": {
+    "seed": 42,
+    "physical_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "effective_batch_size": 32,
+    "num_workers": 2,
+    "pin_memory": true,
+    "optimizer": {
+      "name": "AdamW",
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08
+    },
+    "loss": {
+      "name": "WeightedCrossEntropyLoss",
+      "label_smoothing": 0.0,
+      "use_class_weights": true
+    },
+    "scheduler": {
+      "name": "CosineAnnealingLR",
+      "T_max": 15,
+      "eta_min": 1e-06
+    },
+    "amp": {
+      "enabled": true,
+      "device_type": "cuda",
+      "dtype": "float16",
+      "init_scale": 1024,
+      "gradient_clipping": 1.0
+    },
+    "epochs": 15,
+    "early_stopping": {
+      "patience": 5,
+      "metric": "val_macro_f1",
+      "mode": "max"
+    }
+  },
+  "paths": {
+    "checkpoint_dir": "models/chest_xray_convnext_tiny",
+    "results_dir": "results/chest_xray_convnext_tiny",
+    "best_model_checkpoint": "models/chest_xray_convnext_tiny/best_model.pth"
+  }
+}

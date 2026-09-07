@@ -1,0 +1,66 @@
+{
+  "model": "resnet50",
+  "architecture": "torchvision.models.resnet50",
+  "checkpoint_used": "models\\chest_xray_resnet50\\best_model.pth",
+  "checkpoint_selection_criterion": "Highest Validation Macro F1 ONLY (Epoch 13)",
+  "test_dataset": "C:\\Users\\AADI\\Downloads\\dataset\\chest-xray-tb-pneumonia\\test",
+  "test_count": 1951,
+  "number_correct": 1929,
+  "number_incorrect": 22,
+  "test_error_count": 22,
+  "test_error_percentage": 1.13,
+  "accuracy": 0.9887,
+  "accuracy_pct": 98.87,
+  "macro_precision": 0.9896,
+  "macro_recall": 0.9896,
+  "macro_f1": 0.9896,
+  "weighted_precision": 0.9887,
+  "weighted_recall": 0.9887,
+  "weighted_f1": 0.9887,
+  "per_class": {
+    "NORMAL": {
+      "precision": 0.9857,
+      "recall": 0.9881,
+      "f1_score": 0.9869,
+      "support": 839
+    },
+    "PNEUMONIA": {
+      "precision": 0.9874,
+      "recall": 0.9827,
+      "f1_score": 0.9851,
+      "support": 637
+    },
+    "TUBERCULOSIS": {
+      "precision": 0.9958,
+      "recall": 0.9979,
+      "f1_score": 0.9968,
+      "support": 475
+    }
+  },
+  "confusion_matrix": [
+    [
+      829,
+      8,
+      2
+    ],
+    [
+      11,
+      626,
+      0
+    ],
+    [
+      1,
+      0,
+      474
+    ]
+  ],
+  "error_analysis": {
+    "pneumonia_misclassified_as_normal": 11,
+    "tuberculosis_misclassified_as_normal": 1,
+    "normal_misclassified_as_pneumonia": 8,
+    "normal_misclassified_as_tuberculosis": 2,
+    "pneumonia_misclassified_as_tuberculosis": 0,
+    "tuberculosis_misclassified_as_pneumonia": 0
+  },
+  "device": "cuda:0 (NVIDIA GeForce RTX 4060 Laptop GPU)"
+}

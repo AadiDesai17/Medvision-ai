@@ -1,0 +1,18 @@
+{
+  "dataset": "chest_xray",
+  "classes": [
+    "NORMAL",
+    "PNEUMONIA",
+    "TUBERCULOSIS"
+  ],
+  "batch_size": 32,
+  "warmup_epochs": 2,
+  "fine_tune_epochs": 18,
+  "backbone_lr": 3e-05,
+  "head_lr": 0.00015,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "best_epoch": 9,
+  "best_val_macro_f1": 0.9906168460207353,
+  "total_training_time_seconds": 1909.84
+}

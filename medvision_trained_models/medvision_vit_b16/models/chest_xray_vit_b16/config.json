@@ -1,0 +1,57 @@
+{
+  "architecture": "vit_b_16",
+  "num_classes": 3,
+  "class_names": [
+    "NORMAL",
+    "PNEUMONIA",
+    "TUBERCULOSIS"
+  ],
+  "class_mapping": {
+    "NORMAL": 0,
+    "PNEUMONIA": 1,
+    "TUBERCULOSIS": 2
+  },
+  "input_size": [
+    224,
+    224
+  ],
+  "preprocessing": {
+    "image_size": [
+      224,
+      224
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "color_mode": "RGB (converted from 512x512 Grayscale PNG)"
+  },
+  "pretrained_weights": "ViT_B_16_Weights.IMAGENET1K_V1",
+  "optimizer": "AdamW",
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "scheduler": "CosineAnnealingLR",
+  "physical_batch_size": 16,
+  "gradient_accumulation_steps": 2,
+  "effective_batch_size": 32,
+  "amp": {
+    "enabled": true,
+    "init_scale": 1024.0
+  },
+  "seed": 42,
+  "best_epoch": 5,
+  "best_val_macro_f1": 0.9902352212580464,
+  "best_val_accuracy": 0.9892307692307692,
+  "best_val_loss": 0.0502323380337046,
+  "class_weights": {
+    "NORMAL": 0.8630279302597046,
+    "PNEUMONIA": 0.9901875257492065,
+    "TUBERCULOSIS": 1.146784782409668
+  }
+}

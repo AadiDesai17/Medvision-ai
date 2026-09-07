@@ -1,0 +1,72 @@
+﻿{
+  "project_name": "medvision_swin_tiny",
+  "dataset": {
+    "dataset_root": "C:\\Users\\AADI\\Downloads\\dataset\\chest-xray-tb-pneumonia",
+    "classes": ["NORMAL", "PNEUMONIA", "TUBERCULOSIS"],
+    "num_classes": 3,
+    "input_size": [224, 224],
+    "image_format": "png",
+    "channels": 3,
+    "class_weights": {
+      "NORMAL": 0.863028,
+      "PNEUMONIA": 0.990187,
+      "TUBERCULOSIS": 1.146785
+    }
+  },
+  "model": {
+    "architecture": "swin_t",
+    "torchvision_constructor": "torchvision.models.swin_t",
+    "weights": "torchvision.models.Swin_T_Weights.IMAGENET1K_V1",
+    "head_in_features": 768,
+    "num_classes": 3
+  },
+  "training": {
+    "seed": 42,
+    "physical_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "effective_batch_size": 32,
+    "max_epochs": 15,
+    "early_stopping_patience": 5,
+    "primary_metric": "val_macro_f1",
+    "gradient_clipping": 1.0,
+    "amp": true,
+    "precision": "fp16"
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 3e-5,
+    "weight_decay": 0.01,
+    "betas": [0.9, 0.999],
+    "eps": 1e-8
+  },
+  "scheduler": {
+    "name": "CosineAnnealingLR",
+    "T_max": 15,
+    "eta_min": 1e-6
+  },
+  "preprocessing": {
+    "train": {
+      "resize": [224, 224],
+      "rgb_conversion": true,
+      "random_rotation_degrees": 7,
+      "color_jitter": {
+        "brightness": 0.05,
+        "contrast": 0.05
+      },
+      "horizontal_flip": false,
+      "vertical_flip": false,
+      "normalize": {
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225]
+      }
+    },
+    "val_test_inference": {
+      "resize": [224, 224],
+      "rgb_conversion": true,
+      "normalize": {
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225]
+      }
+    }
+  }
+}

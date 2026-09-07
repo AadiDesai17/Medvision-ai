@@ -1,0 +1,44 @@
+{
+  "seed_set": true,
+  "cuda_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "vram_gb": 8.0,
+  "dataset_samples": 9097,
+  "dataset_loaded": true,
+  "class_weights": [
+    0.8629999756813049,
+    0.9901999831199646,
+    1.1468000411987305
+  ],
+  "batch_shape": [
+    16,
+    3,
+    224,
+    224
+  ],
+  "batch_loaded": true,
+  "labels_valid": true,
+  "total_parameters": 23514179,
+  "trainable_parameters": 23514179,
+  "model_constructed": true,
+  "optimizer_initialized": true,
+  "scheduler_initialized": true,
+  "logits_shape": [
+    16,
+    3
+  ],
+  "loss_value": 1.1365,
+  "forward_amp_passed": true,
+  "gradients_finite": true,
+  "gradient_clipping_passed": true,
+  "optimizer_step_passed": true,
+  "scheduler_step_passed": true,
+  "checkpoint_save_load_passed": true,
+  "inference_passed": true,
+  "peak_vram_mb": 853.75,
+  "vram_safe": true,
+  "old_project_untouched": true,
+  "historical_checkpoint_preserved": true,
+  "dataset_untouched": true,
+  "no_full_training": true
+}

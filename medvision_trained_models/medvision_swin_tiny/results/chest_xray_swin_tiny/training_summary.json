@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETED",
+  "architecture": "Swin-Tiny",
+  "total_epochs_completed": 15,
+  "early_stopped": false,
+  "best_epoch": 15,
+  "best_metrics": {
+    "epoch": 15,
+    "val_loss": 0.06344348725151946,
+    "val_accuracy": 0.9923076923076923,
+    "val_macro_precision": 0.9934129032137161,
+    "val_macro_recall": 0.9925998071051635,
+    "val_macro_f1": 0.9929997924028937,
+    "val_weighted_f1": 0.9923075559156033
+  },
+  "total_training_time_sec": 1218.941742658615,
+  "peak_vram_mb": 1591.67138671875,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "final_lr": 1e-06,
+  "class_weights": {
+    "NORMAL": 0.8630278706550598,
+    "PNEUMONIA": 0.9901874661445618,
+    "TUBERCULOSIS": 1.1467846632003784
+  },
+  "best_checkpoint_path": "models\\chest_xray_swin_tiny\\best_model.pth"
+}

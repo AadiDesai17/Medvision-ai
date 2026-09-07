@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-09-07 15:23:17",
+  "status": "PASSED",
+  "environment": {
+    "python_version": "3.14.4",
+    "pytorch_version": "2.13.0+cu126",
+    "torchvision_version": "0.28.0+cu126",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ],
+    "total_vram_gb": 7.996,
+    "total_vram_mb": 8187.5
+  },
+  "architecture": {
+    "model_name": "convnext_tiny",
+    "weights": "ConvNeXt_Tiny_Weights.DEFAULT (ImageNet-1K v1)",
+    "total_params": 27822435,
+    "trainable_params": 27822435,
+    "classifier_structure": "Sequential(\n  (0): LayerNorm2d((768,), eps=1e-06, elementwise_affine=True, bias=True)\n  (1): Flatten(start_dim=1, end_dim=-1)\n  (2): Linear(in_features=768, out_features=3, bias=True)\n)"
+  },
+  "dataset": {
+    "root": "C:\\Users\\AADI\\Downloads\\dataset\\chest-xray-tb-pneumonia",
+    "split_counts": {
+      "train": 9097,
+      "val": 1950,
+      "test": 1951
+    },
+    "total_samples": 12998,
+    "counts_match": true
+  },
+  "class_weights": [
+    0.8629999756813049,
+    0.9901999831199646,
+    1.1468000411987305
+  ],
+  "smoke_pass": {
+    "batch_size": 16,
+    "input_shape": [
+      16,
+      3,
+      224,
+      224
+    ],
+    "output_shape": [
+      16,
+      3
+    ],
+    "loss_value": 0.9893803596496582,
+    "preclip_grad_norm": 4.545003414154053,
+    "peak_vram_allocated_mb": 1139.89,
+    "peak_vram_reserved_mb": 1258.0
+  }
+}

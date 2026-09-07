@@ -1,0 +1,61 @@
+{
+  "seed_set": true,
+  "cuda_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "vram_gb": 8.0,
+  "compute_capability": [
+    8,
+    9
+  ],
+  "dataset_loaded": true,
+  "split_counts": {
+    "train": 9097,
+    "val": 1950,
+    "test": 1951
+  },
+  "class_weights": [
+    0.8629999756813049,
+    0.9901999831199646,
+    1.1468000411987305
+  ],
+  "real_batch_loaded": true,
+  "batch_shape": [
+    16,
+    3,
+    224,
+    224
+  ],
+  "batch_shape_verified": true,
+  "labels_valid": true,
+  "total_parameters": 27822435,
+  "trainable_parameters": 27822435,
+  "model_constructed": true,
+  "logits_shape": [
+    16,
+    3
+  ],
+  "logits_finite": true,
+  "loss_value": 1.1733,
+  "loss_finite": true,
+  "backward_passed": true,
+  "gradients_finite": true,
+  "gradient_clipping_passed": true,
+  "pre_clip_norm": 17.3021,
+  "optimizer_step_passed": true,
+  "grad_scaler_passed": true,
+  "scheduler_step_passed": true,
+  "init_lr": 3e-05,
+  "stepped_lr": 2.9683140210640184e-05,
+  "checkpoint_save_load_passed": true,
+  "inference_architecture_passed": true,
+  "mem_alloc_mb": 455.64,
+  "mem_peak_mb": 1139.89,
+  "mem_reserved_mb": 1258.0,
+  "headroom_mb": 7047.61,
+  "gpu_memory_safe": true,
+  "other_projects_untouched": true,
+  "dataset_untouched": true,
+  "full_training_not_performed": true,
+  "test_set_not_evaluated": true,
+  "status": "PASSED"
+}

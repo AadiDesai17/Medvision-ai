@@ -1,0 +1,54 @@
+﻿project:
+  name: medvision_swin_tiny
+  stage: 2
+  description: "Swin Transformer Tiny baseline on Chest X-ray dataset"
+
+dataset:
+  dataset_root: "C:\\Users\\AADI\\Downloads\\dataset\\chest-xray-tb-pneumonia"
+  classes:
+    - NORMAL
+    - PNEUMONIA
+    - TUBERCULOSIS
+  num_classes: 3
+  img_size: 224
+  num_workers: 2
+  pin_memory: true
+
+model:
+  name: swin_tiny
+  torchvision_constructor: torchvision.models.swin_t
+  pretrained: true
+  weights: "torchvision.models.Swin_T_Weights.IMAGENET1K_V1"
+  head_in_features: 768
+  num_classes: 3
+
+training:
+  seed: 42
+  physical_batch_size: 16
+  gradient_accumulation_steps: 2
+  effective_batch_size: 32
+  max_epochs: 15
+  early_stopping_patience: 5
+  primary_metric: val_macro_f1
+  gradient_clipping: 1.0
+  amp: true
+  amp_init_scale: 1024.0
+  precision: fp16
+
+optimizer:
+  name: AdamW
+  lr: 0.00003
+  weight_decay: 0.01
+  betas: [0.9, 0.999]
+  eps: 0.00000001
+
+scheduler:
+  name: CosineAnnealingLR
+  T_max: 15
+  eta_min: 0.000001
+
+paths:
+  checkpoint_dir: "models/chest_xray_swin_tiny"
+  results_dir: "results/chest_xray_swin_tiny"
+  best_model_path: "models/chest_xray_swin_tiny/best_model.pth"
+  history_path: "results/chest_xray_swin_tiny/training_history.json"
